@@ -1,7 +1,8 @@
 __tests__/runner/*
 
 # comment out in distribution branches
-node_modules/
+# TODO: get back node_module. It was removed because it wasn't possible to build android-sdk with the upgraded version of androind-emulator
+# node_modules/
 
 # Rest pulled from https://github.com/github/gitignore/blob/master/Node.gitignore
 # Logs
