@@ -1,5 +1,5 @@
 name: 'Android Emulator Runner'
-description: 'Installs, configures and starts an Android Emulator directly on macOS virtual machines.'
+description: 'Installs, configures and starts an Android Emulator directly on hardware-accelerated runners.'
 author: 'Reactive Circus'
 branding:
   icon: 'smartphone'
@@ -33,6 +33,9 @@ inputs:
   force-avd-creation:
     description: 'whether to force create the AVD by overwriting an existing AVD with the same name as `avd-name` - `true` or `false`'
     default: 'true'
+  emulator-boot-timeout:
+    description: 'Emulator boot timeout in seconds. If it takes longer to boot, the action would fail - e.g. `300` for 5 minutes'
+    default: '600'
   emulator-options:
     description: 'command-line options used when launching the emulator - e.g. `-no-window -no-snapshot -camera-back emulated`'
     default: '-no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim'
@@ -65,5 +68,5 @@ inputs:
   pre-emulator-launch-script:
     description: 'custom script to run after creating the AVD and before launching the emulator - e.g. `./adjust-emulator-configs.sh`'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'lib/main.js'

@@ -1,5 +1,28 @@
 # Change Log
 
+## v2.30.1
+
+* Run action on Node 20. - [#371](https://github.com/ReactiveCircus/android-emulator-runner/pull/371)
+
+## v2.30.0
+
+* Update to Node 20. - [#369](https://github.com/ReactiveCircus/android-emulator-runner/pull/369)
+
+## v2.29.0
+
+* Fixed emulator download URL. - [#343](https://github.com/ReactiveCircus/android-emulator-runner/pull/343)
+* Upgrade to latest npm dependencies. - [#347](https://github.com/ReactiveCircus/android-emulator-runner/pull/347) [#355](https://github.com/ReactiveCircus/android-emulator-runner/pull/355)
+* Update SDK command-line tools to `11.0`. - [#356](https://github.com/ReactiveCircus/android-emulator-runner/pull/356)
+* Update SDK build tools to `34.0.0`. - [#356](https://github.com/ReactiveCircus/android-emulator-runner/pull/356)
+
+## v2.28.0
+
+* Add `emulator-boot-timeout` to support configuring maximum time waiting for emulator boot. - [#326](https://github.com/ReactiveCircus/android-emulator-runner/pull/326)
+* Support non-integer `api-level`. - [#317](https://github.com/ReactiveCircus/android-emulator-runner/pull/317)
+* Replace deprecated `ANDROID_SDK_ROOT` with `ANDROID_HOME`. - [304](https://github.com/ReactiveCircus/android-emulator-runner/pull/304)
+* Update SDK command-line tools to `9.0`. - [#331](https://github.com/ReactiveCircus/android-emulator-runner/pull/331)
+* Update SDK build tools to `33.0.2`. - [#331](https://github.com/ReactiveCircus/android-emulator-runner/pull/331)
+
 ## v2.27.0
 
 * Added `pre-emulator-launch-script` to support running script after creating the AVD and before launching the emulator.  - [#247](https://github.com/ReactiveCircus/android-emulator-runner/pull/247) @nilsreichardt.
