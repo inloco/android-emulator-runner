@@ -121,4 +121,4 @@ jobs:
         script: |
           echo $GITHUB_REPOSITORY
           adb devices
-          ./gradlew connectedDebugAndroidTest
+          ./gradlew -Pandroid.aapt2FromMavenOverride=$ANDROID_SDK_ROOT/build-tools/35.0.0/aapt2 connectedDebugAndroidTest

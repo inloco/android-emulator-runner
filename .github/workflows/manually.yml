@@ -28,7 +28,7 @@ on:
       script:
         description: 'custom script to run - e.g. `./gradlew connectedCheck`'
         required: true
-        default: './gradlew connectedDebugAndroidTest'
+        default: './gradlew -Pandroid.aapt2FromMavenOverride=$ANDROID_SDK_ROOT/build-tools/35.0.0/aapt2 connectedDebugAndroidTest'
 
 jobs:
   test:
